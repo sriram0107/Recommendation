@@ -1,0 +1,68 @@
+
+<html>
+<head>
+<title>Recommendation</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+div{
+height : 200px ;
+width : 100% - 50px ;
+ border : 1px solid black ;
+ overflow : scroll ; 
+// margin : 50px ; 
+border-radius : 50px ;     
+}
+h1{
+font-family : courier ;
+text-align : center ;
+}
+h3{
+font-family : courier ;
+text-align : center ;
+}
+ body {
+background-image : linear-gradient(to right, #A770EF, #CF8BF3,#FDB99B); 
+}
+    </style>
+</head>
+<body>
+{%if movie%}
+<h1>Movies</h1><br>
+    <div>
+{%for i in movie%}
+<a href={{i['link']}} target='_blank'>
+<h1>{{i['title']}}</h1>
+<h3>{{i['language']}}</h3>
+<h3>{{i['genre']}}</h3>
+<br><br>
+</a>
+{%endfor%}
+    </div>
+{%endif%}
+{%if music%}
+<h1>Music</h1><br>
+    <div>
+{%for i in music%}
+<a href={{i['ytlink']}} target='_blank'>
+<h1>{{i['singer']}}</h1>
+<h3>{{i['genre']}}</h3>
+<br><br>
+</a>
+{%endfor%}
+    </div>
+{%endif%}
+{%if food%}
+<h1>Food</h1><br>
+   <div>
+{%for i in food%}
+<a href='https://www.google.com/search?q={{i['label']}}' target='_blank'>
+<h1>{{i['label']}}</h1>
+<h3>{{i['brand']}}</h3>
+<br><br>
+</a>
+{%endfor%}
+    </div>
+{%endif%}
+<button type="button" class="btn btn-outline-primary"><a href='/'>Back To Home</a></button>
+</body>
+</html>

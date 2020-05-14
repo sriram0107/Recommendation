@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Covid Questionnaire</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+        
+    </head>
+
+<body>
+
+        <div class="sidebar-navigation hidde-sm hidden-xs">
+            <div class="logo">
+                <a href="#">Covid<em>19</em></a>
+            </div>
+            <nav>
+                <ul>
+               
+                    <li>
+                        <a href='/form'>
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Form
+                        </a>
+                    </li>
+                 
+                    <li>
+                        <a href='/add'>
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Add
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+           
+        </div>
+
+        <div class="slider">
+            <div class="Modern-Slider content-section" id="top">
+           
+                <div class="item item-1">
+                    <div class="img-fill">
+                    <div class="image"><img src="{{url_for('static',filename='main.png')}}" height=100% width=100% ></div>
+                    <div class="info">
+                        <div>
+                          <h1>Covid-19 Activity<br>Suggestor</h1>
+                          <p>Hello and welcome to our website!<br>
+                          	Please click on the button below to access the form!</p>
+                          <div class="white-button button">
+                              <a href='/form'>Click to proceed</a>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+</body>
+</html>

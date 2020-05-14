@@ -1,0 +1,345 @@
+<html>
+	<head>
+		<title> Form </title>
+		<script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+              
+		<style>
+button{
+padding : 10px ;
+margin = 20px ;
+border-radius:20px ;
+}
+			form {
+				max-width: 375px;
+				margin: 1rem auto;
+			}
+
+			input[type=submit] {
+ 	 			width: 100%;
+  				background-color: #00cc7a;
+  				color: white;
+  				padding: 14px 20px;
+  				margin: 50px 0;
+  				border: none;
+  				border-radius: 20px;
+  				cursor: pointer;
+			}
+	
+			input[type=submit]:hover {
+ 				background-color: #00995c;
+			}
+
+			input[type=text], select {
+  				width: 100%;
+  				padding: 12px 20px;
+  				margin: 8px 0;
+  				display: inline-block;
+  				border: 2px solid #00cc7a;
+  				border-radius: 4px;
+  				box-sizing: border-box;
+			}
+
+			.formHead {
+				font-family: "Monotype corsiva";
+			}
+			
+			#formBackground {
+				background-color: #e6e6e6;
+				margin: 1rem auto;
+				padding: 12px 20px;
+				border-radius: 20px;
+				border: 5px solid #595959;
+				width: 38%;
+			}
+
+			input[type=checkbox] {
+ 				cursor: pointer;
+				margin-left: 12px;
+				margin-top: 5px;
+			}
+
+			input[type=radio] {
+ 				cursor: pointer;
+			}
+
+			input[name="musicTime"]{
+  				margin: 0 10px 0 73px;
+			}
+
+			input[name="musicLang"]{
+  				margin: 0 12px 0 28px;
+			}
+
+			input[name="movieTime"]{
+  				margin: 0 10px 0 73px;
+			}
+
+			input[name="movieLang"]{
+  				margin: 0 12px 0 28px;
+			}
+
+			label {
+				font-family: "Cambria";
+				font-size: 115%;
+			}
+
+		</style>
+	</head>
+
+	<body style = 'background-image:linear-gradient(to right,#373B44,#4286f4);'>
+		<div id = "formBackground">
+		<h2 style="margin-left:1em"> <u> Select the activities you would like to try out! </u> </h2>
+		<form>
+			<table>
+				<tbody>
+					<tr>
+						<td> <input type="checkbox" name="activity" value="Music" id="musicCheck"> <label for="musicCheck"> Music </label> </td>
+						<td> <input type="checkbox" name="activity" value="Movie" id="movieCheck"> <label for="movieCheck"> Movies/TV Shows </label> </td>
+						<td> <input type="checkbox" name="activity" value="Cook" id="cookCheck"> <label for="cookCheck"> Cooking </label> </td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+		
+		<div>
+			<form action="/recommendation" name = "genreform">
+				<span id="Music" style="display: none;">
+					<br> <h2 class = "formHead" style = "margin-top: 0;"> <u> Music </u> </h2>
+					<p style = "font-size: 115%;" id = "musicgenretext">
+						Select the genre of music you would like to hear!
+					</p>
+					<table>
+						<tbody>
+							<tr>
+								<td> <input type="radio" name="music_genre" value="pop"> Pop </td>
+								<td> <input type="radio" name="music_genre" value="hiphop"> Hip Hop </td>
+								<td> <input type="radio" name="music_genre" value="edm"> EDM </td>
+								<td> <input type="radio" name="music_genre" value="classical"> Classical  </td>
+								<td> <input type="radio" name="music_genre" value="rock"> Rock  </td>
+							</tr>
+						</tbody>
+					</table>
+					<p style = "font-size: 113%;" id = "musiclangtext">
+						Select the language of music you would like to hear!
+					</p>
+					<table>
+						<tbody>
+							<tr>
+								<td> <input type="radio" name="music_language" value="english"> English </td>
+								<td> <input type="radio" name="music_language" value="hindi"> Hindi </td>
+								<td> <input type="radio" name="music_language" value="punjabi"> Punjabi </td>
+							</tr>
+						</tbody>
+					</table>
+
+					<p style = "font-size: 113%;" id = "musictimetext">
+						Select the type of music you would like to hear!
+					</p>
+					<table>
+						<tbody>
+							<tr>
+								<td> <input type="radio" name="music_decade" value="old"> Old </td>
+								<td> <input type="radio" name="music_decade" value="new"> New </td>
+							</tr>
+						</tbody>
+					</table>
+				</span>
+		
+				<span id="Movie" style="display: none;"> 
+					<br> <h2 class = "formHead"> <u> Movies </u> </h2> 
+					<p style = "font-size: 115%;" id = "moviegenretext">
+						Select the genre of movies/tv shows you would like to watch!
+					</p>
+					<table>
+						<tbody>
+							<tr>
+								<td> <input type="radio" name="movie_genre" value="action"> Action  </td>
+								<td> <input type="radio" name="movie_genre" value="horror"> Horror  </td>
+								<td> <input type="radio" name="movie_genre" value="drama"> Drama  </td>
+								<td> <input type="radio" name="movie_genre" value="thriller"> Thriller  </td>
+								<td> <input type="radio" name="movie_genre" value="crime"> Crime  </td>
+							</tr>
+						</tbody>
+					</table>
+					<p style = "font-size: 113%;" id = "movielangtext">
+						Select the language of movies/tv shows you would like to watch!
+					</p>
+					<table>
+						<tbody>
+							<tr>
+								<td> <input type="radio" name="movie_language" value="english"> English </td>
+								<td> <input type="radio" name="movie_language" value="hindi"> Hindi </td>
+								<td> <input type="radio" name="movie_language" value="tamil"> Tamil </td>
+							</tr>
+						</tbody>
+					</table>
+
+					<p style = "font-size: 113%;" id = "movietimetext">
+						Select the type of movies/tv shows you would like to watch!
+					</p>
+					<table>
+						<tbody>
+							<tr>
+								<td> <input type="radio" name="movie_decade" value="old"> Old </td>
+								<td> <input type="radio" name="movie_decade" value="new"> New </td>
+							</tr>
+						</tbody>
+					</table>
+				</span>
+	
+				<span id="Cook" style="display: none;"> 
+					<br> <h2 class = "formHead"> <u> Cooking </u> </h2> 
+					<p>
+						<input type="text" name="ingr" placeholder="Enter your favorite ingredients!" id = "ingredientList">
+					</p>
+				</span>
+
+				<span id = "SubmitButton" style="display: none;">
+					<input type="submit" id="submit">
+				</span>
+
+		 	</form>
+		</div>	
+		</div>	
+              <button><a href='/'> Back To Home </a></button>
+		<script>
+		
+			document.getElementById('Music').style.display = "none";
+			document.getElementById('Movie').style.display = "none";
+			document.getElementById('Cook').style.display = "none";
+			document.getElementById('SubmitButton').style.display = "none";
+
+			var checkedActivities = [];
+			var checkedMusicGenre = [];
+			var checkedMusicLang = [];
+			var checkedMusicTime = [];
+			var checkedMovieGenre = [];
+			var checkedMovieLang = [];
+			var checkedMovieTime = [];
+
+			$('input:checkbox').change(function() {
+				var value = $(this).val();
+				if ($(this).prop('checked')) {
+					checkedActivities.push(value);
+					if(value.localeCompare("Music")==0) {
+						document.getElementById('Music').style.display = "inline";
+					}
+					else if(value.localeCompare("Movie")==0) {
+						document.getElementById('Movie').style.display = "inline";
+					}
+					else if(value.localeCompare("Cook")==0) {
+						document.getElementById('Cook').style.display = "inline";
+					}
+				}
+				else {
+					var index = checkedActivities.indexOf(value);
+					if(index != -1) {
+						checkedActivities.splice(index, 1);
+						if(value.localeCompare("Music")==0) {
+							document.getElementById('Music').style.display = "none";
+						}
+						else if(value.localeCompare("Movie")==0) {
+							document.getElementById('Movie').style.display = "none";
+						}
+						else if(value.localeCompare("Cook")==0) {
+							document.getElementById('Cook').style.display = "none";
+						}
+					}
+				}
+	
+				if(checkedActivities.length==0) {
+					document.getElementById('SubmitButton').style.display = "none";
+				}
+				else {
+					document.getElementById('SubmitButton').style.display = "inline";
+				}
+			});
+
+			$("input:radio[name='music']").change(function() {
+				var value = $(this).val();
+				if ($(this).prop('checked')) {
+					checkedMusicGenre.push(value);
+				}
+			});
+
+			$("input:radio[name='music_language']").change(function() {
+				var value = $(this).val();
+				if ($(this).prop('checked')) {
+					checkedMusicLang.push(value);
+				}
+			});
+
+			$("input:radio[name='movie']").change(function() {
+				var value = $(this).val();
+				if ($(this).prop('checked')) {
+					checkedMovieGenre.push(value);
+				}
+			});
+			
+			$("input:radio[name='movie_language']").change(function() {
+				var value = $(this).val();
+				if ($(this).prop('checked')) {
+					checkedMovieLang.push(value);
+				}
+			});
+
+			$('input[type=submit]').on('click', function(e) {
+				var message = "";
+				if (window.getComputedStyle(document.getElementById('Music')).display !== "none") {
+					if($("input:radio[name='music_genre']:checked").length==0) {
+						message += "Please select the genre of music. \n";
+						document.getElementById('musicgenretext').style.color = "red";
+					}
+					else document.getElementById('musicgenretext').style.color = "black";
+
+					if($("input:radio[name='music_language']:checked").length==0) {
+						message += "Please select the language of music. \n";
+						document.getElementById('musiclangtext').style.color = "red";
+					}
+					else document.getElementById('musiclangtext').style.color = "black";
+
+					if($("input:radio[name='music_decade']:checked").length==0) {
+						message += "Please select the type of music. \n";
+						document.getElementById('musictimetext').style.color = "red";
+					}
+					else document.getElementById('musictimetext').style.color = "black";
+				}
+
+				if (window.getComputedStyle(document.getElementById('Movie')).display !== "none") {
+					if($("input:radio[name='movie_genre']:checked").length==0) {
+						message += "Please select the genre of movie/tv show. \n";
+						document.getElementById('moviegenretext').style.color = "red";
+					}
+					else document.getElementById('moviegenretext').style.color = "black";
+
+					if($("input:radio[name='movie_language']:checked").length==0) {
+						message += "Please select the language of movie/tv show. \n";
+						document.getElementById('movielangtext').style.color = "red";
+					}
+					else document.getElementById('movielangtext').style.color = "black";
+
+					if($("input:radio[name='movie_decade']:checked").length==0) {
+						message += "Please select the type of movie/tv show. \n";
+						document.getElementById('movietimetext').style.color = "red";
+					}
+					else document.getElementById('movietimetext').style.color = "black";
+
+				}
+
+				if (window.getComputedStyle(document.getElementById('Cook')).display !== "none") {
+					if($('input[name="ingr"]').val() == "") {
+						message += "Please enter your favourtie ingredient. \n";
+						document.getElementById('ingredientList').style.borderColor = "red";
+					}
+					else document.getElementById('ingredientList').style.borderColor = "#00cc7a";
+				}
+
+				if(message !== "") {
+					e.preventDefault();
+					alert(message);
+				}
+			});
+
+		</script>
+	</body>
+</html>
