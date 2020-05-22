@@ -1,11 +1,11 @@
 sno,singer,decade,genre,language,ytlink
 1,"Ariana Grande",new,pop,english,https://www.youtube.com/user/osnapitzari
-2,"Billie Eilish ",new,electronic,english,https://www.youtube.com/channel/UCiGm_E4ZwYSHV3bcW1pnSeQ
-3,"Khalid ",new,contemprory,english,https://www.youtube.com/channel/UCkntT5Je5DDopF70YUsnuEQ
-4,"Post Malone ",new,contemprory,english,https://www.youtube.com/user/postmalone
+2,"Billie Eilish ",new,pop,english,https://www.youtube.com/channel/UCiGm_E4ZwYSHV3bcW1pnSeQ
+3,"Khalid ",new,pop,english,https://www.youtube.com/channel/UCkntT5Je5DDopF70YUsnuEQ
+4,"Post Malone ",new,hiphop,english,https://www.youtube.com/user/postmalone
 5,"Elvis Presley ",old,rock,english,https://www.youtube.com/channel/UCW6G95TBLCh5SdC-DHDSf5w
-6,"Frank Sinatra",old,jazz,english,https://www.youtube.com/user/FrankSinatra
-7,"Bing Crosby ",old,jazz,english,https://www.youtube.com/user/BingCrosbyEnterprise
+6,"Frank Sinatra",old,classical,english,https://www.youtube.com/user/FrankSinatra
+7,"Bing Crosby ",old,classical,english,https://www.youtube.com/user/BingCrosbyEnterprise
 8,"Freddie Mercury",old,rock,english,https://www.youtube.com/channel/UCxbkO0haK5H6zhsa_lRcn0A
 9,"Michael Jackson",old,pop,english,https://www.youtube.com/user/michaeljackson
 10,"Guns N' Roses",old,rock,english,https://www.youtube.com/channel/UCIak6JLVOjqhStxrL1Lcytw
@@ -14,43 +14,43 @@ sno,singer,decade,genre,language,ytlink
 13,"Shreya Goshal",new,pop,hindi,https://www.youtube.com/channel/UCcL78rRNuUQ8t7Dx4CLmRqA
 14,"Neha Kakkar",new,pop,hindi,https://www.youtube.com/user/NehaKakkarOfficial
 15,"Shankar Mahadevan",new,pop,hindi,https://www.youtube.com/channel/UCP9xhE1AouBEKMUVH5_og7A
-16,Ritiviz,new,electronic,hindi,https://www.youtube.com/user/ritvizomusic
+16,Ritiviz,new,edm,hindi,https://www.youtube.com/user/ritvizomusic
 17,"Sonu Nigam",new,pop,hindi,https://www.youtube.com/user/sonunigamofficial
-18,Nucleya,new,electronic,hindi,https://www.youtube.com/user/NucleyaProductions
-19,"Mohammad Rafi",old,ghazal,hindi,https://www.youtube.com/user/ShemarooEnt/search?query=mohammad+rafi
+18,Nucleya,new,edm,hindi,https://www.youtube.com/user/NucleyaProductions
+19,"Mohammad Rafi",old,classical,hindi,https://www.youtube.com/user/ShemarooEnt/search?query=mohammad+rafi
 20,"Lata Mangeshkar",old,pop,hindi,https://www.youtube.com/user/UltraHindi/search?query=lata+mangeshkar
 21,"Kishore Kumar",old,pop,hindi,https://www.youtube.com/user/UltraHindi/search?query=kishore+kumar
 22,"Asha Bhonsle",old,classical,hindi,https://www.youtube.com/user/UltraHindi/search?query=asha+bhonsle
 23,"Udit Narayan",old,classical,hindi,https://www.youtube.com/user/UltraHindi/search?query=udit+narayan
-24,"Guru Randhawa",new,bhangra,punjabi,https://www.youtube.com/user/Page1Records
-25,"Amrinder Gill",new,bhangra,punjabi,https://www.youtube.com/user/AmrinderGillOfficial
-26,"Maninda Buttar",new,bhangra,punjabi,https://www.youtube.com/user/WHBBP/search?query=manindar+buttar
+24,"Guru Randhawa",new,pop,punjabi,https://www.youtube.com/user/Page1Records
+25,"Amrinder Gill",new,pop,punjabi,https://www.youtube.com/user/AmrinderGillOfficial
+26,"Maninda Buttar",new,pop,punjabi,https://www.youtube.com/user/WHBBP/search?query=manindar+buttar
 27,"Hardy Sandhu",new,jazz,punjabi,https://www.youtube.com/user/sonymusicindiaSME/search?query=hardy+sandhu
 28,"Taylor Swift",new,pop,english,https://www.youtube.com/user/taylorswift
 29,"The Weekend",new,R&B,english,https://www.youtube.com/user/xoxxxoooxo
-30,Drake,new,rap,english,https://www.youtube.com/user/DrakeOfficial
+30,Drake,new,hiphop,english,https://www.youtube.com/user/DrakeOfficial
 31,"Selena Gomez",new,pop,english,https://www.youtube.com/user/SelGomez
 32,"Ed Sheeran",new,pop,english,https://www.youtube.com/user/EdSheeran
-33,"Travis Scott",new,rap,english,https://www.youtube.com/user/TravisScottXX
+33,"Travis Scott",new,hiphop,english,https://www.youtube.com/user/TravisScottXX
 34,"John Legend",new,pop,english,https://www.youtube.com/user/johnlegend
 35,"Charlie Puth",new,R&B,english,https://www.youtube.com/user/CharliesVlogs
-36,Eminem,new,rap,english,https://www.youtube.com/user/EminemMusic
+36,Eminem,old,hiphop,english,https://www.youtube.com/user/EminemMusic
 37,"Bruno Mars",new,R&B,english,https://www.youtube.com/user/ElektraRecords
-38,JOJI,new,rap,english,https://www.youtube.com/channel/UCZW5lIUz93q_aZIkJPAC0IQ/search?query=joji
+38,JOJI,new,hiphop,english,https://www.youtube.com/channel/UCZW5lIUz93q_aZIkJPAC0IQ/search?query=joji
 39,"Harry Styles",new,pop,english,https://www.youtube.com/channel/UCZFWPqqPkFlNwIxcpsLOwew
 40,Sia,new,pop,english,https://www.youtube.com/user/siavideos
-41,"Stevie Wonder",old,jazz,english,https://www.youtube.com/channel/UCGD7CfG3JgZF52QpIRivV1Q
-42,"Otis Redding",old,soul,english,https://www.youtube.com/user/OtisReddingChannel
-43,"Bob Dylan",old,jazz,english,https://www.youtube.com/user/BobDylanTV
-45,"Marvin Gaye",old,jazz,english,https://www.youtube.com/channel/UCV0Arhg2bZuyL6CutipMduw
+41,"Stevie Wonder",old,classical,english,https://www.youtube.com/channel/UCGD7CfG3JgZF52QpIRivV1Q
+42,"Otis Redding",old,classical,english,https://www.youtube.com/user/OtisReddingChannel
+43,"Bob Dylan",old,classical,english,https://www.youtube.com/user/BobDylanTV
+45,"Marvin Gaye",old,classical,english,https://www.youtube.com/channel/UCV0Arhg2bZuyL6CutipMduw
 46,"John Lennon",old,rock,english,https://www.youtube.com/user/johnlennon
 47,"Ray Charles",old,rock,english,https://www.youtube.com/user/raycharlestv
 48,"Aretha Franklin",old,pop,english,https://www.youtube.com/user/ArethaFranklinVEVO
 49,Prince,old,rock,english,https://www.youtube.com/user/prince
 50,"Christina Aguilera",old,pop,english,https://www.youtube.com/user/ChristinaAguilera
 51,"Eric Burdon",old,rock,english,https://www.youtube.com/channel/UCX59r1wZ-i13D1lzOJr1URw
-52,Diplo,new,electronic,english,https://www.youtube.com/user/diplo1978
-53,"Big Sean",new,rap,english,https://www.youtube.com/user/bseandon
-54,"Juicy J",new,rap,english,https://www.youtube.com/user/juicyjcomic
-55,Tyga,new,rap,english,https://www.youtube.com/user/TygaTygaTV
+52,Diplo,new,edm,english,https://www.youtube.com/user/diplo1978
+53,"Big Sean",new,hiphop,english,https://www.youtube.com/user/bseandon
+54,"Juicy J",new,hiphop,english,https://www.youtube.com/user/juicyjcomic
+55,Tyga,new,hiphop,english,https://www.youtube.com/user/TygaTygaTV
 56,"Adam Levine",new,pop,english,https://www.youtube.com/user/Maroon5
